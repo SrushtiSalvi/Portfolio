@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import bgpic from './assets/bgPic.jpg'
+import Home from './pages/Home'
+import Navbar from './components/Navbar';
+import About from './pages/About';
+import Resume from './pages/Resume';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+import SocialLinks from './components/SocialLinks';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='text-white h-screen bg-cover bg-no-repeat justify-center bg-black w-full' style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1)), url(${bgpic})`}}>
+      <Navbar />
+     <Home />
+     <About />
+     <Resume />
+     <Portfolio />
+     <Contact />
+
+     {/* <SocialLinks /> */}
     </div>
   );
 }
