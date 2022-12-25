@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.6383488b.css",
-    "main.js": "/static/js/main.0912d9e9.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/portfolioBg.jpg": "/static/media/portfolioBg.f018a2d0ecb3f780a392.jpg",
-    "static/media/bgPic.jpg": "/static/media/bgPic.4b525ed9c22c8a7ac566.jpg",
-    "static/media/contactBg.jpg": "/static/media/contactBg.a00faec73e6200b80351.jpg",
-    "static/media/glc.png": "/static/media/glc.5d43f2db83e514638d75.png",
-    "static/media/pic1.jpg": "/static/media/pic1.b418732d128f6f14f440.jpg",
-    "static/media/resume.pdf": "/static/media/resume.7a0dd7f1b09b41904f90.pdf",
-    "index.html": "/index.html",
-    "main.6383488b.css.map": "/static/css/main.6383488b.css.map",
-    "main.0912d9e9.js.map": "/static/js/main.0912d9e9.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/Portfolio/static/css/main.6383488b.css",
+    "main.js": "/Portfolio/static/js/main.f702e74f.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/portfolioBg.jpg": "/Portfolio/static/media/portfolioBg.f018a2d0ecb3f780a392.jpg",
+    "static/media/bgPic.jpg": "/Portfolio/static/media/bgPic.4b525ed9c22c8a7ac566.jpg",
+    "static/media/contactBg.jpg": "/Portfolio/static/media/contactBg.a00faec73e6200b80351.jpg",
+    "static/media/glc.png": "/Portfolio/static/media/glc.5d43f2db83e514638d75.png",
+    "static/media/pic1.jpg": "/Portfolio/static/media/pic1.b418732d128f6f14f440.jpg",
+    "static/media/resume.pdf": "/Portfolio/static/media/resume.7a0dd7f1b09b41904f90.pdf",
+    "index.html": "/Portfolio/index.html",
+    "main.6383488b.css.map": "/Portfolio/static/css/main.6383488b.css.map",
+    "main.f702e74f.js.map": "/Portfolio/static/js/main.f702e74f.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6383488b.css",
-    "static/js/main.0912d9e9.js"
+    "static/js/main.f702e74f.js"
   ]
 }
