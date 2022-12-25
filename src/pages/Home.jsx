@@ -1,13 +1,17 @@
 import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import bgpic from "../assets/bgPic.jpg";
 
 const Home = () => {
   return (
     <div
       name="home"
       // className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
-      className="h-screen w-full"
+      className="h-screen w-full bg-cover bg-no-repeat "
+      style={{
+        backgroundImage: `linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.8)), url(${bgpic})`,
+      }}
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">

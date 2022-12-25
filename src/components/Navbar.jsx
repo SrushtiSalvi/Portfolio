@@ -34,7 +34,7 @@ const Navbar = () => {
     <nav
       className={
         scrollPosition > 0
-          ? `flex flex-row justify-center w-full h-16 px-4 text-black bg-gray-100 fixed transition-all ease-in-out duration-900`
+          ? `flex flex-row justify-center w-full h-16 px-4 z-10 text-black bg-gray-100 bg-opacity-90 fixed transition-all ease-in-out duration-900`
           : `flex flex-row justify-center w-full h-16 px-4 text-white bg-transparent fixed `
       }
     >
