@@ -16,17 +16,22 @@ const ResumeTimelineItem = ({ title, duration, content, certificate_link }) => {
         </TimelineSeparator>
         <TimelineContent>
           <div className="space-y-4 w-fit">
-            <h1 className="text-cyan-400">{title}</h1>
-            <p className="py-1 px-2 bg-cyan-600 text-sm font-bold w-fit">
+            <h1 className="text-blue-400">{title}</h1>
+            <p className="py-1 px-2 bg-blue-600 text-sm font-bold w-fit">
               {duration}
             </p>
             <p>{content}</p>
-            <a href={certificate_link} className="font-bold">
-              Certificate Link:-{" "}
-              <span className="text-blue-500 font-medium">
-                Internship letter
+            {certificate_link ? (
+              <span className="font-bold">
+                Certificate Link:-{" "}
+                <a
+                  href={certificate_link}
+                  className="text-blue-500 font-medium"
+                >
+                  click here
+                </a>
               </span>
-            </a>
+            ) : null}
           </div>
         </TimelineContent>
       </TimelineItem>

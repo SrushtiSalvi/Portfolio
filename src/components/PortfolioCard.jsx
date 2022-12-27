@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-import glcbg from "../assets/glc.png";
+import defaultimg from "../assets/portfolioCardDefaultBg.jpg";
+import { MdOutlineCancel } from "react-icons/md";
 
 // const style = {
 //   position: "absolute",
@@ -16,29 +17,37 @@ import glcbg from "../assets/glc.png";
 //   p: 4,
 // };
 
-const PortfolioCard = () => {
+const PortfolioCard = ({
+  bgpic,
+  title,
+  short_des,
+  description,
+  tech_used,
+  website,
+  git_repo,
+}) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
-    <div className=" bg-white h-72 relative rounded-xl overflow-hidden transform transition duration-500 hover:scale-105">
+    <div className=" bg-white h-72 relative rounded-lg overflow-hidden transform transition duration-500 hover:scale-105">
       <div
-        className="h-full -z-1 w-full md:bg-contain bg-cover bg-no-repeat justify-center flex items-center flex-col"
+        className="h-full -z-1 w-full md:bg-contain bg-center bg-no-repeat justify-center flex items-center flex-col"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${glcbg})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${
+            bgpic || defaultimg
+          })`,
         }}
       >
         <div className="absolute inset-0 z-1 bg-black text-center flex flex-col items-center justify-center opacity-100 bg-opacity-60 duration-300 space-y-4 p-4">
           <h1 className="text-white font-extrabold text-xl md:text-2xl">
-            Government law college
+            {title}
           </h1>
-          <p className="text-sm md:text-base">
-            A website for placement committee of Government Law College, Mumbai.
-          </p>
+          <p className="text-sm md:text-base">{short_des}</p>
           <button
             onClick={handleOpen}
-            className="py-1 px-2 text-sm font-light  bg-teal-500 text-black rounded-md"
+            className="py-1 px-2 text-sm  bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer text-white font-semibold rounded-md"
           >
             Know More
           </button>
@@ -72,52 +81,50 @@ const PortfolioCard = () => {
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
           </Typography> */}
         {/* </Box> */}
-        <div className="bg-white m-5 md:m-0 md:w-1/2 h-3/4 md:h-5/6 p-5 md:pt-10 pt-36 flex flex-col space-y-6 justify-center overflow-scroll">
-          <h1 className="text-xl md:text-2xl font-bold text-teal-700 ">
-            Placement committee of Government Law College, Mumbai
-          </h1>
-          <div>
-            <h1 className="font-semibold">Description:</h1>
-            <p>
-              A Website for placement committee of Government Law College,
-              Mumbai.This is a freelancing project developed by a team of 4
-              people. The main purpose of this project is to keep students
-              updated with job vacancies in Law firms registered with their
-              college. We have also provided an admin dashboard through which
-              the admin can alter the content visible on the user web page. We
-              have basically built a Content management System along with a
-              dynamic resume builder for the college. This website is deployed
-              and is in production and is used by more then 10 thousand users
-              daily.
-            </p>
-          </div>
-          <div>
-            <h1 className="font-semibold">Technologies used :</h1>
-            <div className="grid grid-cols-2 auto-rows-auto">
-              <li>React</li>
-              <li>Tailwind</li>
-              <li>Flask</li>
-              <li>MongoDB</li>
-              <li>Figma</li>
+        <div
+          // className="bg-white m-5 md:m-0 md:w-1/2 h-3/4 md:h-5/6 xl:h-7/8 p-5 md:pt-10 pt-36 flex flex-col space-y-6 justify-center overflow-scroll"
+          className="bg-white h-2/3 p-5 md:w-2/3 overflow-scroll "
+        >
+          <button className="w-full flex justify-end" onClick={handleClose}>
+            <MdOutlineCancel className=" text-2xl mb-4" />
+          </button>
+          <div className="space-y-8">
+            <h1 className="text-xl md:text-2xl font-bold text-blue-500 ">
+              {title}
+            </h1>
+            <div>
+              <h1 className="font-semibold text-lg">Description:</h1>
+              <p>{description}</p>
             </div>
-          </div>
-          <div>
-            <h1 className="font-semibold">Visit website:</h1>
-            <a
-              href="https://glcplacements.com/"
-              className="font-semibold text-blue-600 underline-blue-600 underline underline-offset-4"
-            >
-              Placement Committee of Government Law College, Mumbai
-            </a>
-          </div>
-          <div>
-            <h1 className="font-semibold">Github Repository:</h1>
-            <a
-              href="https://github.com/StandinKP/glc-frontend"
-              className="font-semibold text-blue-600 underline-blue-600 underline underline-offset-4"
-            >
-              https://github.com/StandinKP/glc-frontend
-            </a>
+            <div>
+              <h1 className="font-semibold text-lg">Technologies used :</h1>
+              <div className="grid grid-cols-2 auto-rows-auto text-lg">
+                {tech_used.map((tech, index) => (
+                  <li key={index}>{tech}</li>
+                ))}
+              </div>
+            </div>
+            {website ? (
+              <div>
+                <h1 className="font-semibold text-lg">Visit website:</h1>
+                <a
+                  href={website}
+                  className="font-semibold text-blue-600 underline-blue-600 underline underline-offset-4"
+                >
+                  {title}
+                </a>
+              </div>
+            ) : null}
+
+            <div>
+              <h1 className="font-semibold text-lg">Github Repository:</h1>
+              <a
+                href={git_repo}
+                className="font-semibold text-blue-600 underline-blue-600 underline underline-offset-4"
+              >
+                {git_repo}
+              </a>
+            </div>
           </div>
         </div>
       </Modal>

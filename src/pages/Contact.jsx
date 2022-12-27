@@ -127,7 +127,7 @@ const Contact = () => {
           <div class="md:flex md:items-center">
             <div class="md:w-1/3">
               <button
-                class="shadow bg-gray-800 hover:bg-gray-600 focus:shadow-outline focus:outline-none text-white py-1 px-6 rounded "
+                class="shadow bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer hover:bg-gray-600 focus:shadow-outline focus:outline-none text-white py-1 px-6 rounded "
                 type="submit"
               >
                 Send

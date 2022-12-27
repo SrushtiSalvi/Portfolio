@@ -90,7 +90,7 @@ const Resume = () => {
           </section>
         </div>
       </div>
-      <div>
+      <div className=" py-10 md:py-20">
         <h1 className="text-center font-extrabold md:text-4xl text-2xl my-10">
           My Skills
           <hr className="my-4 h-px w-1/2 md:w-1/4 mx-auto  border-0 bg-gray-700" />

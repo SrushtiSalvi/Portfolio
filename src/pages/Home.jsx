@@ -2,6 +2,7 @@ import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import bgpic from "../assets/bgPic.jpg";
+import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
   return (
@@ -14,11 +15,27 @@ const Home = () => {
       }}
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a React Developer
+        <div className="flex flex-col  w-full space-y-2 md:space-y-4 ">
+          <h2 className="text-2xl sm:text-4xl  text-white">
+            Hi, my name is{" "}
+            <span className="text-blue-500 font-semibold">Srushti Salvi.</span>
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">
+          <h2 className="text-3xl sm:text-5xl font-bold text-white">
+            I'm a{" "}
+            <span className="text-blue-500">
+              {/* Style will be inherited from the parent element */}
+              <Typewriter
+                loop
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1500}
+                words={["Frontend Developer", "React Developer"]}
+              />
+            </span>
+          </h2>
+          <p className="text-gray-500 py-2 max-w-md">
             I have experience building and desgining software. Currently, I love
             to work on web application using technologies like React, Tailwind,
             etc.

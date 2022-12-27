@@ -1,5 +1,7 @@
 import React from "react";
 import pic1 from "../assets/pic1.jpg";
+import { HiDownload } from "react-icons/hi";
+import resume from "../assets/resume.pdf";
 
 const About = () => {
   return (
@@ -20,7 +22,7 @@ const About = () => {
         </div>
         <div className="md:space-y-10 space-y-4 md:px-4">
           <h1 className="text-xl font-bold">
-            I am <span className="text-cyan-500">SRUSHTI</span>
+            I am <span className="text-blue-500">SRUSHTI</span>
           </h1>
           <p>WEB DEVELOPER </p>
           <p>
@@ -33,9 +35,14 @@ const About = () => {
             always provides opportunities for knowledge enhancement.
           </p>
 
-          <button className="bg-gray-800 p-4 rounded-md text-sm">
+          <a
+            href={resume}
+            download
+            className="bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer p-4 rounded-md text-sm flex w-fit"
+          >
             DOWNLOAD MY CV
-          </button>
+            <HiDownload size={20} className="ml-1 " />
+          </a>
         </div>
       </div>
     </div>
