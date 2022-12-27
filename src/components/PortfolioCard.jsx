@@ -33,7 +33,7 @@ const PortfolioCard = ({
   return (
     <div className=" bg-white h-72 relative rounded-lg overflow-hidden transform transition duration-500 hover:scale-105">
       <div
-        className="h-full -z-1 w-full md:bg-contain bg-center bg-no-repeat justify-center flex items-center flex-col"
+        className="h-full -z-1 w-full md:bg-contain bg-cover bg-no-repeat justify-center flex items-center flex-col"
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${
             bgpic || defaultimg
