@@ -55,7 +55,7 @@ const Resume = () => {
             >
               <ResumeTimelineItem
                 title="P.E.S Modern College Of Engineering, Shivajinagar-Pune"
-                duration="2021-2023"
+                duration="2019-2023"
                 content="3rd year GPA (9.81)"
               />
               <ResumeTimelineItem
