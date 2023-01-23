@@ -7,6 +7,7 @@ const About = () => {
   return (
     <div
       name="about"
+      id="about"
       className=" w-full py-10 md:p-24 bg-gradient-to-b from-gray-900 to-black text-white  justify-center "
     >
       <div className=" w-full h-fit text-center ">

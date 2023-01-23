@@ -26,6 +26,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
+      id="contact"
       className="text-white h-full bg-cover bg-no-repeat justify-center bg-black w-full pt-20 px-8 md:p-24"
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) ,url(${contactBg})`,

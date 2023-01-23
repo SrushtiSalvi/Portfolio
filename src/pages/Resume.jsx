@@ -15,7 +15,7 @@ import zIndex from "@mui/material/styles/zIndex";
 
 function LinearProgressWithLabel({ value, title }) {
   return (
-    <div className="">
+    <div>
       <h1 className="font-bold text-xl text-white">{title}</h1>
       <Box sx={{ display: "flex", alignItems: "center" }}>
         <Box sx={{ width: "100%", mr: 1 }}>
@@ -35,6 +35,7 @@ const Resume = () => {
   return (
     <div
       name="resume"
+      id="resume"
       className="p-4 lg:px-24 bg-gradient-to-b from-gray-800 to-black justify-center py-10"
     >
       <div className=" inline-flex flex-col justify-center h-auto">

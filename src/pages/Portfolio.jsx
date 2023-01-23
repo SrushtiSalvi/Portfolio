@@ -9,6 +9,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
+      id="portfolio"
       className="text-white bg-cover bg-no-repeat justify-center bg-black w-full py-16 px-8 md:px-24 min-h-screen"
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)) ,url(${portfolioBg})`,
