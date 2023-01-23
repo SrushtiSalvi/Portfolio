@@ -37,7 +37,7 @@ const Portfolio = () => {
             "Postman",
           ]}
           website="https://glcplacements.com/"
-          git_repo="https://github.com/StandinKP/glc-frontend"
+          // git_repo="https://github.com/StandinKP/glc-frontend"
         />
         <PortfolioCard
           bgpic={newsAppbg}

@@ -81,49 +81,58 @@ const PortfolioCard = ({
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
           </Typography> */}
         {/* </Box> */}
-        <div
-          // className="bg-white m-5 md:m-0 md:w-1/2 h-3/4 md:h-5/6 xl:h-7/8 p-5 md:pt-10 pt-36 flex flex-col space-y-6 justify-center overflow-scroll"
-          className="bg-white h-2/3 p-5 md:w-2/3 overflow-scroll "
-        >
-          <button className="w-full flex justify-end" onClick={handleClose}>
-            <MdOutlineCancel className=" text-2xl mb-4" />
-          </button>
-          <div className="space-y-8">
-            <h1 className="text-xl md:text-2xl font-bold text-blue-500 ">
-              {title}
-            </h1>
-            <div>
-              <h1 className="font-semibold text-lg">Description:</h1>
-              <p>{description}</p>
-            </div>
-            <div>
-              <h1 className="font-semibold text-lg">Technologies used :</h1>
-              <div className="grid grid-cols-2 auto-rows-auto text-lg">
-                {tech_used.map((tech, index) => (
-                  <li key={index}>{tech}</li>
-                ))}
+        <div className="p-3 bg-white h-2/3 md:w-2/3 ">
+          <h1 className="flex justify-between text-xl p-2 md:text-2xl font-bold text-white bg-gradient-to-r from-cyan-500 to-blue-500">
+            {title}
+            <button className=" pt-2" onClick={handleClose}>
+              <MdOutlineCancel className=" text-xl mb-2" />
+            </button>
+          </h1>
+          <div
+            // className="bg-white m-5 md:m-0 md:w-1/2 h-3/4 md:h-5/6 xl:h-7/8 p-5 md:pt-10 pt-36 flex flex-col space-y-6 justify-center overflow-scroll"
+            className="bg-gray-50 border relative h-5/6 overflow-y-scroll"
+          >
+            <div className=" ">
+              <div className="space-y-8 p-5">
+                <div className="text-base">
+                  <h1 className="font-semibold">Description:</h1>
+                  <p>{description}</p>
+                </div>
+                <div className=" text-base">
+                  <h1 className="font-semibold">Technologies used :</h1>
+                  <div className="grid grid-cols-2 auto-rows-auto">
+                    {tech_used.map((tech, index) => (
+                      <li key={index}>{tech}</li>
+                    ))}
+                  </div>
+                </div>
+                {website ? (
+                  <div className="text-base">
+                    <h1 className="font-semibold">Visit website:</h1>
+                    <a
+                      href={website}
+                      rel="noreferrer"
+                      target="_blank"
+                      className="font-semibold text-blue-600 underline-blue-600 underline underline-offset-4"
+                    >
+                      {title}
+                    </a>
+                  </div>
+                ) : null}
+                {git_repo ? (
+                  <div className="text-base">
+                    <h1 className="font-semibold">Github Repository:</h1>
+                    <a
+                      href={git_repo}
+                      rel="noreferrer"
+                      target="_blank"
+                      className="font-semibold text-blue-600 underline-blue-600 underline underline-offset-4"
+                    >
+                      {git_repo}
+                    </a>
+                  </div>
+                ) : null}
               </div>
-            </div>
-            {website ? (
-              <div>
-                <h1 className="font-semibold text-lg">Visit website:</h1>
-                <a
-                  href={website}
-                  className="font-semibold text-blue-600 underline-blue-600 underline underline-offset-4"
-                >
-                  {title}
-                </a>
-              </div>
-            ) : null}
-
-            <div>
-              <h1 className="font-semibold text-lg">Github Repository:</h1>
-              <a
-                href={git_repo}
-                className="font-semibold text-blue-600 underline-blue-600 underline underline-offset-4"
-              >
-                {git_repo}
-              </a>
             </div>
           </div>
         </div>
