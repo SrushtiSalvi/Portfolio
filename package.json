@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://http://portfolio.srushtisalvi.me",
+  "homepage": "http://portfolio.srushtisalvi.me",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
