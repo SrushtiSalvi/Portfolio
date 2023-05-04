@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import defaultimg from "../assets/portfolioCardDefaultBg.jpg";
 import { MdOutlineCancel } from "react-icons/md";
+import { Chip } from "@mui/material";
 
 // const style = {
 //   position: "absolute",
@@ -51,6 +52,16 @@ const PortfolioCard = ({
           >
             Know More
           </button>
+          <div className="flex-wrap flex gap-3 justify-center items-center w-full md:w-2/3">
+            {tech_used.map((tech, index) => (
+              <div
+                key={index}
+                className=" bg-transparent text-[0.65rem] md:text-xs text-white font-bold border px-1 md:px-2 md:py-2 rounded-2xl"
+              >
+                {tech}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -102,7 +113,9 @@ const PortfolioCard = ({
                   <h1 className="font-semibold">Technologies used :</h1>
                   <div className="grid grid-cols-2 auto-rows-auto">
                     {tech_used.map((tech, index) => (
-                      <li key={index}>{tech}</li>
+                      <li key={index} className="font-bold text-blue-600">
+                        {tech}
+                      </li>
                     ))}
                   </div>
                 </div>

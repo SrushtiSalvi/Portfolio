@@ -4,6 +4,7 @@ import PortfolioCard from "../components/PortfolioCard";
 import glcbg from "../assets/glc.png";
 import newsAppbg from "../assets/news-app.png";
 import linkedinClone from "../assets/linkedin-clone.png";
+import billSplitter from "../assets/bill-splitter.png";
 
 const Portfolio = () => {
   return (
@@ -40,6 +41,21 @@ const Portfolio = () => {
           // git_repo="https://github.com/StandinKP/glc-frontend"
         />
         <PortfolioCard
+          bgpic={billSplitter}
+          title="Expense Tracker and Bill Splitter"
+          short_des="A fullstack app to track expenses and split bills among friends."
+          description="A billsplitter and expense tracker app would allow users to input expenses, categorize them, and split bills among multiple users. The app would keep track of all expenses and allow users to see how much they owe or are owed by others. Users could also set up recurring expenses and receive notifications when bills are due. The app would also include features such as budget tracking, the ability to export expense reports, and the ability to add notes or receipts to each expense entry."
+          tech_used={[
+            "React",
+            "Tailwind",
+            "Redux-toolkit",
+            "react-redux",
+            "MongoDB",
+            "Flask",
+          ]}
+          git_repo="https://github.com/SrushtiSalvi/bill-splitter-flask-react-.git"
+        />
+        <PortfolioCard
           bgpic={newsAppbg}
           title="React News App"
           short_des="A News App which gives insights of everyday news."
@@ -62,6 +78,7 @@ const Portfolio = () => {
           ]}
           git_repo="https://github.com/SrushtiSalvi/LinkedIn-Clone---ReactJS.git"
         />
+
         <PortfolioCard
           title="SplitKaro"
           short_des="A mobile App which helps user to manage expenses within groups as well as individually."
@@ -76,6 +93,7 @@ const Portfolio = () => {
           ]}
           git_repo="https://github.com/SrushtiSalvi/splitKaro---React-Native.git"
         />
+
         <PortfolioCard
           title="Currency Converter"
           short_des="A mobile app that allows users to convert one currency to another currency "
