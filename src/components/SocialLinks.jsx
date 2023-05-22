@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import resume from "../assets/resume.pdf";
+import resume from "../assets/Srushti_Salvi_Fullstack_developer.pdf";
 
 const SocialLinks = () => {
   const links = [
@@ -29,7 +29,8 @@ const SocialLinks = () => {
       id: 4,
       icon: <BsFillPersonLinesFill size={30} />,
       name: "Resume",
-      href: "https://docs.google.com/document/d/16okI5DQliV7W3N6MvSaDT3M3utIR1lBY8cwN7r9-73U/edit?usp=sharing",
+      href: "https://drive.google.com/file/d/1eI6X6_LW3Pd0FuNs7yCpYuv7JhBOLHat/view?usp=sharing",
+      // href: { resume },
       style: "rounded-br-md",
       download: true,
     },
@@ -50,6 +51,7 @@ const SocialLinks = () => {
             >
               <a
                 href={href}
+                file={resume}
                 className="flex justify-between items-center w-full text-white"
                 download={download}
                 target="_blank"

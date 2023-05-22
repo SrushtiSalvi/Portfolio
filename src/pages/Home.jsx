@@ -36,6 +36,7 @@ const Home = () => {
               />
             </span>
           </h2>
+
           <p className="text-gray-500 py-2 max-w-md">
             I have experience building and desgining software. Currently, I love
             to work on web application using technologies like React, Tailwind,

@@ -1,7 +1,7 @@
 import React from "react";
 import pic1 from "../assets/pic1.jpg";
 import { HiDownload } from "react-icons/hi";
-import resume from "../assets/resume.pdf";
+import resume from "../assets/Srushti_Salvi_Fullstack_developer.pdf";
 
 const About = () => {
   return (
