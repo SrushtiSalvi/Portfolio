@@ -5,6 +5,7 @@ import glcbg from "../assets/glc.png";
 import newsAppbg from "../assets/news-app.png";
 import linkedinClone from "../assets/linkedin-clone.png";
 import billSplitter from "../assets/bill-splitter.png";
+import studybro from "../assets/StudyBroBg.png";
 
 const Portfolio = () => {
   return (
@@ -54,6 +55,23 @@ const Portfolio = () => {
             "Flask",
           ]}
           git_repo="https://github.com/SrushtiSalvi/bill-splitter-flask-react-.git"
+        />
+        <PortfolioCard
+          bgpic={studybro}
+          title="StudyBro"
+          short_des="An all in one platform that includes a chat app, a coding platform, and a quiz app for teachers and students."
+          description="Our web application aims to connect coders and create a collaborative community by fostering healthy competition and providing constructive criticism. It includes user management, analytics, a competitive coding platform, leaderboards, and a chat section. By incorporating flow theory and social media features like timelines and posts, we enhance student immersion. The project follows a modular approach with centralized database connectivity, allowing for easy API development and future integration of machine learning, AI, and chatbots. ReactJS, Python, Flask, and chatbot technology are utilized to cater to the needs of teachers, students, and IT professionals."
+          tech_used={[
+            "React",
+            "Tailwind",
+            "Redux-toolkit",
+            "react-redux",
+            "MongoDB",
+            "Flask",
+            "Figma",
+            "Axios",
+          ]}
+          git_repo="https://github.com/SrushtiSalvi/StudyBro-frontend"
         />
         <PortfolioCard
           bgpic={newsAppbg}
