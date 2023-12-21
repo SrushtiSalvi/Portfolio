@@ -52,16 +52,6 @@ const PortfolioCard = ({
           >
             Know More
           </button>
-          <div className="flex-wrap flex gap-3 justify-center items-center w-full md:w-2/3">
-            {tech_used.map((tech, index) => (
-              <div
-                key={index}
-                className=" bg-transparent text-[0.65rem] md:text-xs text-white font-bold border px-1 md:px-2 md:py-2 rounded-2xl"
-              >
-                {tech}
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 
@@ -93,9 +83,9 @@ const PortfolioCard = ({
           </Typography> */}
         {/* </Box> */}
         <div className="p-3 bg-white h-2/3 md:w-2/3 ">
-          <h1 className="flex justify-between text-xl p-2 md:text-2xl font-bold text-white bg-gradient-to-r from-cyan-500 to-blue-500">
+          <h1 className="flex justify-between text-xl p-2 md:text-2xl font-bold text-blue-600 border ">
             {title}
-            <button className=" pt-2" onClick={handleClose}>
+            <button className="text-black pt-2" onClick={handleClose}>
               <MdOutlineCancel className=" text-xl mb-2" />
             </button>
           </h1>

@@ -6,6 +6,8 @@ import newsAppbg from "../assets/news-app.png";
 import linkedinClone from "../assets/linkedin-clone.png";
 import billSplitter from "../assets/bill-splitter.png";
 import studybro from "../assets/StudyBroBg.png";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 const Portfolio = () => {
   return (
@@ -22,7 +24,8 @@ const Portfolio = () => {
         Recent Portfolio
         {/* <hr className="my-4 h-px w-1/2 md:w-1/4 mx-auto  border-0 bg-gray-700" /> */}
       </h1>
-      <div className="grid md:grid-cols-2 2xl:grid-cols-3 gap-10 auto-rows-auto h-full w-full">
+
+      <div className="grid md:grid-cols-2 2xl:grid-cols-3 gap-10 auto-rows-auto align-middle h-full w-full">
         <PortfolioCard
           bgpic={glcbg}
           title="Placement committee of Government Law College, Mumbai"

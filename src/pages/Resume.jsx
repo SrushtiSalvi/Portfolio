@@ -104,10 +104,6 @@ let skills = [
     title: "AWS EC2",
     icon: awsec2,
   },
-  {
-    title: "NGINX",
-    icon: nginx,
-  },
 ];
 
 const Resume = () => {
@@ -161,9 +157,17 @@ const Resume = () => {
               }}
             >
               <ResumeTimelineItem
+                title="React Developer"
+                CompanyName="MiniOrange"
+                duration="03/06/2023 - Present"
+                content="As a React Developer at MiniOrange, I actively contribute to the development and enhancement of our flagship products. My role involves feature development, UI/UX improvements, or performance optimization, and I am deeply involved in ensuring the high-quality delivery of these projects."
+                certificate_link=""
+              />
+              <ResumeTimelineItem
                 title="React Developer Intern"
+                CompanyName="Apptware"
                 duration="22/07/2022 - 31/10/2022"
-                content="I was a React intern at Apptware, a rapidly expanding business. During my internship, I worked on a few minor personal projects as well as a template for an admin dashboard in React JS."
+                content="During my internship at Apptware, I worked on a few minor personal projects as well as a template for an admin dashboard in React JS."
                 certificate_link="https://drive.google.com/file/d/1EmVqgzf4UnJNqKKfvR-76M3u2Xktq-gO/view?usp=share_link"
               />
             </Timeline>
@@ -178,13 +182,13 @@ const Resume = () => {
         <div className="flex justify-center w-full">
           <section className=" flex flex-wrap justify-center items-center gap-6 md:gap-8 md:w-4/5">
             {skills.map((skill) => (
-              <div className=" flex justify-center flex-col items-center bg-gray-200 rounded-xl">
+              <div className=" flex justify-center flex-col items-center bg-gray-800 rounded-xl">
                 <img
                   src={skill.icon}
                   alt="icon"
                   className="w-20 h-20 md:w-32 md:h-32 p-2 md:p-4"
                 />
-                <h1 className="text-black font-bold py-2 text-[0.6rem] md:text-lg ">
+                <h1 className="text-white font-bold py-2 text-[0.6rem] md:text-lg ">
                   {skill.title}
                 </h1>
               </div>

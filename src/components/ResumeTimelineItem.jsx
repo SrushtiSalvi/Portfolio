@@ -6,7 +6,13 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 
-const ResumeTimelineItem = ({ title, duration, content, certificate_link }) => {
+const ResumeTimelineItem = ({
+  title,
+  duration,
+  content,
+  certificate_link,
+  CompanyName,
+}) => {
   return (
     <div className="">
       <TimelineItem>
@@ -15,14 +21,15 @@ const ResumeTimelineItem = ({ title, duration, content, certificate_link }) => {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
-          <div className="space-y-4 w-fit">
+          <div className="space-y-2 w-fit">
             <h1 className="text-blue-400">{title}</h1>
-            <p className="py-1 px-2 bg-blue-600 text-sm font-bold w-fit">
-              {duration}
-            </p>
-            <p>{content}</p>
+            <div className="flex gap-2">
+              <small className="text-gray-400">{CompanyName}</small>
+              <small>{duration}</small>
+            </div>
+            <p className="text-sm">{content}</p>
             {certificate_link ? (
-              <span className="font-bold">
+              <span className="font-bold text-sm">
                 Certificate Link:-{" "}
                 <a
                   href={certificate_link}
