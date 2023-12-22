@@ -20,7 +20,10 @@ const Portfolio = () => {
         // backgroundImage: `url(${portfolioBg})`,
       }}
     >
-      <h1 className="text-center font-extrabold md:text-4xl text-2xl mb-16">
+      <h1
+        className="text-center font-extrabold md:text-4xl text-2xl mb-16"
+        data-aos="fade-up"
+      >
         Recent Portfolio
         {/* <hr className="my-4 h-px w-1/2 md:w-1/4 mx-auto  border-0 bg-gray-700" /> */}
       </h1>

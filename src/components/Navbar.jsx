@@ -36,9 +36,6 @@ const Navbar = () => {
     },
   ];
 
-  const elementId = document.getElementById("about");
-  console.log(elementId);
-
   return (
     <nav
       className={

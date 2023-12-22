@@ -32,7 +32,10 @@ const PortfolioCard = ({
   const handleClose = () => setOpen(false);
 
   return (
-    <div className=" bg-white h-72 relative rounded-lg overflow-hidden transform transition duration-500 hover:scale-105">
+    <div
+      data-aos="fade-up"
+      className=" bg-white h-72 relative rounded-lg overflow-hidden transform transition duration-500 hover:scale-105"
+    >
       <div
         className="h-full -z-1 w-full md:bg-contain bg-cover bg-no-repeat justify-center flex items-center flex-col"
         style={{
@@ -58,9 +61,9 @@ const PortfolioCard = ({
       {/* <div className="relative">
         <a className="absolute inset-0 z-10 bg-gray-500 text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
           <h1 className="text-black">Title</h1>
-          <p class="mx-auto">Description</p>
+          <p className="mx-auto">Description</p>
         </a>
-        <a href="#" class="relative">
+        <a href="#" className="relative">
           <div className="h-full  content-center">
             <img src={glcbg} className="mx-auto " alt="" />
           </div>

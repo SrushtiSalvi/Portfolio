@@ -32,22 +32,25 @@ const Contact = () => {
         backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)) ,url(${contactBg})`,
       }}
     >
-      <h1 className="text-center font-extrabold md:text-4xl text-2xl my-10">
+      <h1
+        className="text-center font-extrabold md:text-4xl text-2xl my-10"
+        data-aos="fade-up"
+      >
         Get In Touch
         <hr className="my-4 h-px w-1/2 md:w-1/4 mx-auto  border-0 bg-gray-700" />
       </h1>
-      <div className="flex justify-center">
-        <form class="w-full max-w-lg" onSubmit={submitContactForm}>
-          <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+      <div className="flex justify-center" data-aos="fade-up">
+        <form className="w-full max-w-lg" onSubmit={submitContactForm}>
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
-                class="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2"
-                for="grid-first-name"
+                className="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2"
+                htmlFor="grid-first-name"
               >
                 First Name
               </label>
               <input
-                class="appearance-none block w-full bg-transparent text-gray-400 border-b py-3 px-2 mb-3 leading-tight focus:outline-none "
+                className="appearance-none block w-full bg-transparent text-gray-400 border-b py-3 px-2 mb-3 leading-tight focus:outline-none "
                 id="grid-first-name"
                 type="text"
                 required
@@ -55,15 +58,15 @@ const Contact = () => {
                 onChange={(e) => setFirstName(e.target.value)}
               />
             </div>
-            <div class="w-full md:w-1/2 px-3">
+            <div className="w-full md:w-1/2 px-3">
               <label
-                class="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2"
-                for="grid-last-name"
+                className="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2"
+                htmlFor="grid-last-name"
               >
                 Last Name
               </label>
               <input
-                class="appearance-none block w-full bg-transparent text-gray-400 border-b py-3 px-2 mb-3 leading-tight focus:outline-none "
+                className="appearance-none block w-full bg-transparent text-gray-400 border-b py-3 px-2 mb-3 leading-tight focus:outline-none "
                 id="grid-last-name"
                 type="text"
                 required
@@ -72,16 +75,16 @@ const Contact = () => {
               />
             </div>
           </div>
-          <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full px-3">
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full px-3">
               <label
-                class="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2"
-                for="grid-password"
+                className="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2"
+                htmlFor="grid-password"
               >
                 E-mail
               </label>
               <input
-                class="appearance-none block w-full bg-transparent text-gray-400 border-b py-3 px-2 mb-3 leading-tight focus:outline-none "
+                className="appearance-none block w-full bg-transparent text-gray-400 border-b py-3 px-2 mb-3 leading-tight focus:outline-none "
                 id="email"
                 type="email"
                 required
@@ -90,16 +93,16 @@ const Contact = () => {
               />
             </div>
           </div>
-          <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full px-3">
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full px-3">
               <label
-                class="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2"
-                for="grid-password"
+                className="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2"
+                htmlFor="grid-password"
               >
                 Subject
               </label>
               <input
-                class="appearance-none block w-full bg-transparent text-gray-400 border-b py-3 px-2 mb-3 leading-tight focus:outline-none "
+                className="appearance-none block w-full bg-transparent text-gray-400 border-b py-3 px-2 mb-3 leading-tight focus:outline-none "
                 id="subject"
                 type="text"
                 required
@@ -108,16 +111,16 @@ const Contact = () => {
               />
             </div>
           </div>
-          <div class="flex flex-wrap -mx-3 mb-6">
-            <div class="w-full px-3">
+          <div className="flex flex-wrap -mx-3 mb-6">
+            <div className="w-full px-3">
               <label
-                class="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2"
-                for="grid-password"
+                className="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2"
+                htmlFor="grid-password"
               >
                 Message
               </label>
               <textarea
-                class=" appearance-none block w-full bg-transparent text-gray-400 border-b py-3 px-2 mb-3 leading-tight focus:outline-none  "
+                className=" appearance-none block w-full bg-transparent text-gray-400 border-b py-3 px-2 mb-3 leading-tight focus:outline-none  "
                 id="message"
                 required
                 value={message}
@@ -125,16 +128,16 @@ const Contact = () => {
               ></textarea>
             </div>
           </div>
-          <div class="md:flex md:items-center">
-            <div class="md:w-1/3">
+          <div className="md:flex md:items-center">
+            <div className="md:w-1/3">
               <button
-                class="shadow bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer hover:bg-gray-600 focus:shadow-outline focus:outline-none text-white py-1 px-6 rounded "
+                className="shadow bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer hover:bg-gray-600 focus:shadow-outline focus:outline-none text-white py-1 px-6 rounded "
                 type="submit"
               >
                 Send
               </button>
             </div>
-            <div class="md:w-2/3"></div>
+            <div className="md:w-2/3"></div>
           </div>
         </form>
       </div>

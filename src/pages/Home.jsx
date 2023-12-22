@@ -16,7 +16,10 @@ const Home = () => {
       }}
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col  w-full space-y-2 md:space-y-4 ">
+        <div
+          className="flex flex-col  w-full space-y-2 md:space-y-4 "
+          data-aos="fade-right"
+        >
           <h2 className="text-2xl sm:text-4xl  text-white">
             Hi, my name is{" "}
             <span className="text-blue-500 font-semibold">Srushti Salvi.</span>

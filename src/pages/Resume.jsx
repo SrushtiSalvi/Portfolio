@@ -114,12 +114,15 @@ const Resume = () => {
       className="p-4 lg:px-24 bg-gradient-to-b from-gray-800 to-black justify-center py-10"
     >
       <div className=" inline-flex flex-col justify-center h-auto">
-        <h1 className="text-center font-extrabold md:text-4xl text-2xl my-10">
+        <h1
+          className="text-center font-extrabold md:text-4xl text-2xl my-10"
+          data-aos="fade-up"
+        >
           Work & Education
           <hr className="my-4 h-px w-1/2 md:w-1/4 mx-auto  border-0 bg-gray-700" />
         </h1>
         <div className="grid lg:grid-cols-2 auto-rows-auto gap-10">
-          <section className="bg-[#0c0f16] ">
+          <section className="bg-[#0c0f16] " data-aos="fade-right">
             <h1 className="p-6 md:text-xl  font-semibold">Education</h1>
             <Timeline
               sx={{
@@ -146,7 +149,7 @@ const Resume = () => {
               />
             </Timeline>
           </section>
-          <section className="bg-[#0c0f16]">
+          <section className="bg-[#0c0f16]" data-aos="fade-left">
             <h1 className="p-6 md:text-xl  font-semibold">Work</h1>
             <Timeline
               sx={{
@@ -175,14 +178,21 @@ const Resume = () => {
         </div>
       </div>
       <div className=" py-10 md:py-20">
-        <h1 className="text-center font-extrabold md:text-4xl text-2xl my-10">
+        <h1
+          className="text-center font-extrabold md:text-4xl text-2xl my-10"
+          data-aos="fade-up"
+        >
           My Skills
           <hr className="my-4 h-px w-1/2 md:w-1/4 mx-auto  border-0 bg-gray-700 " />
         </h1>
         <div className="flex justify-center w-full">
           <section className=" flex flex-wrap justify-center items-center gap-6 md:gap-8 md:w-4/5">
-            {skills.map((skill) => (
-              <div className=" flex justify-center flex-col items-center bg-gray-800 rounded-xl">
+            {skills.map((skill, index) => (
+              <div
+                data-aos="fade-up"
+                key={index}
+                className=" flex justify-center flex-col items-center bg-gray-800 rounded-xl hover:scale-110 transition duration-500 hover:bg-gray-700"
+              >
                 <img
                   src={skill.icon}
                   alt="icon"

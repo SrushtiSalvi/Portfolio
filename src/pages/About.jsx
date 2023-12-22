@@ -2,6 +2,7 @@ import React from "react";
 import pic1 from "../assets/pic1.jpg";
 import { HiDownload } from "react-icons/hi";
 import resume from "../assets/Srushti_Salvi_Fullstack_developer.pdf";
+import "aos/dist/aos.css";
 
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
       id="about"
       className=" w-full py-10 md:p-24 bg-gradient-to-b from-gray-900 to-black text-white  justify-center "
     >
-      <div className=" w-full h-fit text-center ">
+      <div className=" w-full h-fit text-center">
         <h1 className="font-bold md:text-4xl text-2xl">
           About Me
           <hr className="my-4 h-px w-1/2 md:w-1/4 mx-auto  border-0 bg-gray-700" />
@@ -18,10 +19,13 @@ const About = () => {
         <br />
       </div>
       <div className=" grid md:grid-cols-2 space-x-4 md:w-4/5 px-4 md:p-0 mx-auto">
-        <div className="bg-white h-4/5 overflow-hidden border-8">
+        <div
+          className="bg-white h-4/5 overflow-hidden border-8"
+          data-aos="fade-right"
+        >
           <img src={pic1} alt="mypic" />
         </div>
-        <div className="md:space-y-10 space-y-4 md:px-4">
+        <div className="md:space-y-10 space-y-4 md:px-4" data-aos="fade-left">
           <h1 className="text-xl font-bold">
             I am <span className="text-blue-500">SRUSHTI</span>
           </h1>
@@ -39,7 +43,7 @@ const About = () => {
           <a
             href={resume}
             download
-            className="bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer p-4 rounded-md text-sm flex w-fit"
+            className="bg-gradient-to-r from-cyan-500 to-blue-500 p-4 rounded-md text-sm flex w-fit hover:scale-110 transition duration-500 cursor-pointer"
           >
             DOWNLOAD MY CV
             <HiDownload size={20} className="ml-1 " />
