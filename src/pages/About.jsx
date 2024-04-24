@@ -36,7 +36,7 @@ const About = () => {
             contribute to the company's success.. Strong teamwork skills, as
             well as a willingness to contribute fresh ideas and an eagerness to
             learn new things and work with a company that understands one's
-            natural drive to take on new challenges, fosters progress, and
+            natural drive to take on new challenges, fosters progress and
             always provides opportunities for knowledge enhancement.
           </p>
 
